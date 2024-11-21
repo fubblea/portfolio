@@ -4,6 +4,8 @@
     "watch": "npx tailwindcss -t ./style/input.css -o ./style/output.css --watch"
   },
   "devDependencies": {
+    "caniuse-lite": "^1.0.30001683",
     "tailwindcss": "^3.4.15"
-  }
+  },
+  "homepage": "."
 }
