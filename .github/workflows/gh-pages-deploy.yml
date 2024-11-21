@@ -42,7 +42,7 @@ jobs:
 
       # If using tailwind...
       - name: Download and install tailwindcss binary
-        run: npm install -D tailwindcss # run tailwind
+        run: npm install -D tailwindcss && npx tailwindcss -i style/input.css -o style/output.css # run tailwind
 
 
       - name: Download and install Trunk binary
@@ -65,7 +65,7 @@ jobs:
           # token:
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           # Upload dist dir
           path: './dist'
