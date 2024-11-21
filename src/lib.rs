@@ -19,6 +19,7 @@ pub fn App() -> impl IntoView {
 
     view! {
         <Html lang="en" dir="ltr" attr:data-theme="dark"/>
+        <Stylesheet id="leptos" href="/style/output.css"/>
 
         // sets the document title
         <Title text="Ajay B. Anand"/>
