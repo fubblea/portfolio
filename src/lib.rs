@@ -13,6 +13,7 @@ use crate::pages::project::Project;
 
 /// An app router which renders the homepage and handles 404's
 #[component]
+#[expect(non_snake_case)]
 pub fn App() -> impl IntoView {
     // Provides context that manages stylesheets, titles, meta tags, etc.
     provide_meta_context();
