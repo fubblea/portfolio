@@ -2,6 +2,8 @@
 
 [![Release to Github Pages](https://github.com/fubblea/portfolio/actions/workflows/gh-pages-deploy.yml/badge.svg)](https://github.com/fubblea/portfolio/actions/workflows/gh-pages-deploy.yml)
 
+Link to portfolio: https://fubblea.github.io/portfolio/
+
 ## Local Development
 
 ### Pre-requisites
