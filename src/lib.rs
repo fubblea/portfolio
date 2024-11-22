@@ -3,6 +3,7 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 use pages::not_found::NotFound;
+use pages::project::ProjectOverview;
 
 // Modules
 mod components;
@@ -37,7 +38,8 @@ pub fn App() -> impl IntoView {
             <main>
                 <Routes>
                     <Route path="/portfolio/" view=Home/>
-                    <Route path="/portfolio/project" view=Project/>
+                    <Route path="/portfolio/projects" view=ProjectOverview/>
+                    <Route path="/portfolio/projects/project" view=Project/>
                     <Route path="*" view=Home/>
                 </Routes>
             </main>
