@@ -5,9 +5,14 @@ on:
     branches:
       - master
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    environment: github-pages
     steps:
       - name : Checkout Repo
         uses: actions/checkout@v4
