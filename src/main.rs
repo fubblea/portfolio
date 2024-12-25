@@ -10,14 +10,14 @@ mod views;
 #[rustfmt::skip]
 enum Route {
     #[layout(Navbar)]
-    #[route("/")]
+    #[route("/portfolio")]
     Home {},
 
-    #[route("/project/:id")]
+    #[route("/portfolio/project/:id")]
     Project {id:usize},
 
     //  if the current location doesn't match any of the above routes, render the NotFound component
-    #[route("/:..segments")]
+    #[route("/portfolio/:..segments")]
     NotFound { segments: Vec<String> },
 }
 

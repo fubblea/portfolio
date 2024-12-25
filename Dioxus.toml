@@ -8,7 +8,7 @@ out_dir = "dist"
 asset_dir = "assets"
 
 [web.app]
-# base_path = "portfolio"
+base_path = "portfolio"
 
 # HTML title tag content
 title = "Ajay's Portfolio"
