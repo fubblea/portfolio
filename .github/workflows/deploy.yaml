@@ -24,6 +24,7 @@ jobs:
         run: |
           dx build --release --platform web
           cp -r target/dx/portfolio/release/web/public dist
+          cp dist/index.html dist/404.html
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
