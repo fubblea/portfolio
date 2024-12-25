@@ -1,8 +1,11 @@
 [application]
-
 # App (Project) Name
 name = "portfolio"
+
+default_platform = "web"
+
 out_dir = "dist"
+asset_dir = "assets"
 
 [web.app]
 base_path = "portfolio"
@@ -14,7 +17,7 @@ title = "Ajay's Portfolio"
 [web.resource]
 
 # Additional CSS style files
-style = []
+style = ["./assets/styling/main.css"]
 
 # Additional JavaScript files
 script = []
@@ -24,3 +27,11 @@ script = []
 # Javascript code file
 # serve: [dev-server] only
 script = []
+
+[web.watcher]
+
+# When watcher is triggered, regenerate the `index.html`
+reload_html = true
+
+# Which files or dirs will be monitored
+watch_path = ["src", "public"]

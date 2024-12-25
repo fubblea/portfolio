@@ -1,4 +1,4 @@
-use dioxus::prelude::*;
+use dioxus::{logger::tracing::info, prelude::*};
 
 use components::{Navbar, Project};
 use views::{Home, NotFound};
@@ -25,6 +25,7 @@ const FAVICON: Asset = asset!("/assets/favicon.ico");
 const MAIN_CSS: Asset = asset!("/assets/styling/main.css");
 
 fn main() {
+    info!("Starting app...");
     dioxus::launch(App);
 }
 
