@@ -23,7 +23,7 @@ jobs:
         # Moving folder manually after build due to: https://github.com/DioxusLabs/dioxus/issues/3328
         run: |
           dx build --release --platform web
-          cp target/dx/portfolio/release/web/public dist
+          cp -r target/dx/portfolio/release/web/public dist
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
