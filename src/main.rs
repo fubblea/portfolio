@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
 use components::{Navbar, Project};
-use views::Home;
+use views::{Home, NotFound};
 
 mod components;
 mod views;
@@ -15,6 +15,10 @@ enum Route {
 
     #[route("/project/:id")]
     Project {id:usize},
+
+    //  if the current location doesn't match any of the above routes, render the NotFound component
+    #[route("/:..segments")]
+    NotFound { segments: Vec<String> },
 }
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");

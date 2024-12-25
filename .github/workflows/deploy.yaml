@@ -20,7 +20,7 @@ jobs:
 
       - name: Build Project
         shell: bash
-        run: dx build --release --platform web && cp target/dx/portfolio/release/web/public/index.html target/dx/portfolio/release/web/public/404.html
+        run: dx build --release --platform web
 
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
